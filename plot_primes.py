@@ -23,12 +23,9 @@ def plot(df):
 	fig.savefig("test.png")
 	plt.show()
 
-	return None
+	return fig
 
 def hist(df):
 	h = pd.DataFrame.hist(df, column='diff', bins=160)
-	fig = plt.figure()
-	fig.savefig("prime_diff_histogram.png")
-	
-	return None
-	
+
+	return h
